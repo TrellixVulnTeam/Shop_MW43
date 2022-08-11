@@ -1,4 +1,4 @@
-package com.ishop.ishoptech.entities;
+package com.ishop.ishoptech.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
@@ -13,6 +13,7 @@ import javax.persistence.*;
 @With
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class Image {
 
     @Id

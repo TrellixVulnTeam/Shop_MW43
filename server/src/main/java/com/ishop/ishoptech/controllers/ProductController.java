@@ -1,9 +1,9 @@
 package com.ishop.ishoptech.controllers;
 
-import com.ishop.ishoptech.dao.image.ImageJPA;
-import com.ishop.ishoptech.dao.product.ProductJPA;
-import com.ishop.ishoptech.entities.Image;
-import com.ishop.ishoptech.entities.Product;
+import com.ishop.ishoptech.repository.image.ImageJPA;
+import com.ishop.ishoptech.repository.product.ProductJPA;
+import com.ishop.ishoptech.models.Image;
+import com.ishop.ishoptech.models.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

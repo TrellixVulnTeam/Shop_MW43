@@ -1,4 +1,4 @@
-package com.ishop.ishoptech.entities;
+package com.ishop.ishoptech.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
@@ -15,6 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @With
+@ToString
 public class Product {
 
     @Id

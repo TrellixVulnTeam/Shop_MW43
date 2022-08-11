@@ -1,6 +1,6 @@
-package com.ishop.ishoptech.dao.image;
+package com.ishop.ishoptech.repository.image;
 
-import com.ishop.ishoptech.entities.Image;
+import com.ishop.ishoptech.models.Image;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
