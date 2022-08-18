@@ -21,6 +21,11 @@ public class AdminRestController {
         this.userService = userService;
     }
 
+    @GetMapping(value = "/")
+    public ResponseEntity homeTest(){
+        return new ResponseEntity(HttpStatus.OK);
+    }
+
     @GetMapping(value = "/users/{id}")
     public ResponseEntity<String> getUserById(@PathVariable Long id){
         User result = userService.findById(id);

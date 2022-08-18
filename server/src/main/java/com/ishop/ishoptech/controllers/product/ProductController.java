@@ -1,4 +1,4 @@
-package com.ishop.ishoptech.controllers;
+package com.ishop.ishoptech.controllers.product;
 
 import com.ishop.ishoptech.repository.image.ImageJPA;
 import com.ishop.ishoptech.repository.product.ProductJPA;
