@@ -40,7 +40,7 @@ public class SecurityConfig {
                 .and()
                 .authorizeRequests()
                 .antMatchers(LOGIN_ENDPOINT).permitAll()
-                .antMatchers(ADMIN_ENDPOINT).hasAnyRole()
+                .antMatchers(ADMIN_ENDPOINT).hasAuthority("ROLE_ADMIN")
                 .and()
                 .apply(new JwtConfigurer(jwtTokenProvider));
         return http.build();
