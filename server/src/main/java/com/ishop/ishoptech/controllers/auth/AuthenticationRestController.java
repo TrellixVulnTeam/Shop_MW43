@@ -1,7 +1,7 @@
 package com.ishop.ishoptech.controllers.auth;
 
 import com.ishop.ishoptech.dto.AuthenticationRequestDto;
-import com.ishop.ishoptech.models.User;
+import com.ishop.ishoptech.models.user.User;
 import com.ishop.ishoptech.security.jwt.provider.JwtTokenProvider;
 import com.ishop.ishoptech.security.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

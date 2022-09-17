@@ -1,7 +1,7 @@
 package com.ishop.ishoptech.security.user.Impl;
 
-import com.ishop.ishoptech.models.Role;
-import com.ishop.ishoptech.models.User;
+import com.ishop.ishoptech.models.role.Role;
+import com.ishop.ishoptech.models.user.User;
 import com.ishop.ishoptech.repository.role.RoleRepository;
 import com.ishop.ishoptech.repository.user.UserRepository;
 import com.ishop.ishoptech.security.user.UserService;
@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Service
 @Slf4j
@@ -35,7 +36,7 @@ public class UserServiceImpl implements UserService {
         userRoles.add(roleUser);
 
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        user.setRoles(userRoles);
+        user.setRoles(Set.copyOf(userRoles));
 
         User registeredUser = userRepository.save(user);
 

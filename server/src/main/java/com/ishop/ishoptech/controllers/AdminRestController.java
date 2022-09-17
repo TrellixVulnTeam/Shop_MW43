@@ -1,6 +1,6 @@
 package com.ishop.ishoptech.controllers;
 
-import com.ishop.ishoptech.models.User;
+import com.ishop.ishoptech.models.user.User;
 import com.ishop.ishoptech.security.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

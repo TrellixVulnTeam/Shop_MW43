@@ -1,6 +1,6 @@
 package com.ishop.ishoptech.repository.role;
 
-import com.ishop.ishoptech.models.Role;
+import com.ishop.ishoptech.models.role.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

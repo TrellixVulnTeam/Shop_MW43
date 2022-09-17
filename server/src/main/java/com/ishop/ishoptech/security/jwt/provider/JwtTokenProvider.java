@@ -1,6 +1,6 @@
 package com.ishop.ishoptech.security.jwt.provider;
 
-import com.ishop.ishoptech.models.Role;
+import com.ishop.ishoptech.models.role.Role;
 import com.ishop.ishoptech.security.jwt.exception.JwtAuthenticationException;
 import io.jsonwebtoken.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Base64;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Component
@@ -34,9 +35,9 @@ public class JwtTokenProvider {
         secret = Base64.getEncoder().encodeToString(secret.getBytes());
     }
 
-    public String createToken(String username, List<Role> roleList) {
+    public String createToken(String username, Set<Role> roleList) {
         Claims claims = Jwts.claims().setSubject(username);
-        claims.put("roles", getRoleNames(roleList));
+        claims.put("roles", getRoleNames(List.copyOf(roleList)));
 
         Date now = new Date();
         Date validity = new Date(now.getTime() + validityInMilliseconds);

@@ -1,6 +1,8 @@
-package com.ishop.ishoptech.models;
+package com.ishop.ishoptech.models.image;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.ishop.ishoptech.models.BaseEntity;
+import com.ishop.ishoptech.models.product.Product;
 import lombok.*;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
@@ -14,14 +16,10 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Image {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idImg;
+public class Image extends BaseEntity {
 
     private String description;
-    private String pathToFile;
+    private String path_to_file;
 
     @ToString.Exclude
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)

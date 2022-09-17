@@ -1,6 +1,6 @@
 package com.ishop.ishoptech.repository.user;
 
-import com.ishop.ishoptech.models.User;
+import com.ishop.ishoptech.models.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

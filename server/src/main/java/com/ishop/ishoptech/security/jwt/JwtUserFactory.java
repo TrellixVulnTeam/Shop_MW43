@@ -1,7 +1,7 @@
 package com.ishop.ishoptech.security.jwt;
 
-import com.ishop.ishoptech.models.Role;
-import com.ishop.ishoptech.models.User;
+import com.ishop.ishoptech.models.role.Role;
+import com.ishop.ishoptech.models.user.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
@@ -14,7 +14,7 @@ public final class JwtUserFactory {
     }
 
     public static JwtUser create(User user) {
-        return new JwtUser(user.getId(), user.getUsername(), user.getFirstName(), user.getLastName(), user.getPassword(), mapToGrantedAuthorities(user.getRoles()));
+        return new JwtUser(user.getId(), user.getUsername(), user.getFirstName(), user.getLastName(), user.getPassword(), mapToGrantedAuthorities(List.copyOf(user.getRoles())));
     }
 
     private static List<GrantedAuthority> mapToGrantedAuthorities(List<Role> userRoles) {

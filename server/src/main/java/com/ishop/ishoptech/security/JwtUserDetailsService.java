@@ -1,6 +1,6 @@
 package com.ishop.ishoptech.security;
 
-import com.ishop.ishoptech.models.User;
+import com.ishop.ishoptech.models.user.User;
 import com.ishop.ishoptech.security.jwt.JwtUser;
 import com.ishop.ishoptech.security.jwt.JwtUserFactory;
 import com.ishop.ishoptech.security.user.UserService;

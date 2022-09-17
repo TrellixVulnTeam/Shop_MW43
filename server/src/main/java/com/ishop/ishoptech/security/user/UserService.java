@@ -1,6 +1,6 @@
 package com.ishop.ishoptech.security.user;
 
-import com.ishop.ishoptech.models.User;
+import com.ishop.ishoptech.models.user.User;
 
 import java.util.List;
 
