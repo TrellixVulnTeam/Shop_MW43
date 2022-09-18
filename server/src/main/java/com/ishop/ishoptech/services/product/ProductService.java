@@ -17,6 +17,14 @@ public class ProductService {
         this.productJPA = productJPA;
     }
 
+    public Product save(Product product) {
+        return this.productJPA.save(product);
+    }
+
+    public Product findById(Long id){
+        return this.productJPA.findById(id).orElse(null);
+    }
+
     public List<Product> findAll() {
         return this.productJPA.findAll();
     }

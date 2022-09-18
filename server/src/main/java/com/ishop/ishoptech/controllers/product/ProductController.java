@@ -5,9 +5,7 @@ import com.ishop.ishoptech.models.product.Product;
 import com.ishop.ishoptech.services.image.ImageService;
 import com.ishop.ishoptech.services.product.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,9 +22,15 @@ public class ProductController {
         this.imageService = imageService;
     }
 
-    @GetMapping("/images")
-    public List<Image> imagesAll() {
-        return imageService.findAll();
+    @PostMapping("/products/add")
+    public Product addProduct(@RequestBody Product product) {
+        System.out.println(product);
+        return productService.save(product);
+    }
+
+    @GetMapping("/products/{id}")
+    public Product productById(@PathVariable String id){
+        return this.productService.findById(Long.valueOf(id));
     }
 
     @GetMapping("/products")

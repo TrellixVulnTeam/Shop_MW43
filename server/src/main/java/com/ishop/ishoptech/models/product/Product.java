@@ -30,21 +30,18 @@ public class Product extends BaseEntity {
 
 
     @ToString.Exclude
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @ManyToOne(fetch = FetchType.LAZY)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "idType")
     private Type type;
 
     @ToString.Exclude
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @ManyToOne(fetch = FetchType.LAZY)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "idCompany")
     private Company company;
 
     @ToString.Exclude
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @ManyToOne(fetch = FetchType.LAZY)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "idChipset")
@@ -53,7 +50,6 @@ public class Product extends BaseEntity {
     private String description;
     private Integer amount;
 
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "product", fetch = FetchType.LAZY)
     @Fetch(FetchMode.JOIN)
     @ToString.Exclude
