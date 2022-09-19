@@ -27,7 +27,8 @@ public class Product extends BaseEntity {
 
     private String name;
     private BigDecimal price;
-
+    private String description;
+    private Integer amount;
 
     @ToString.Exclude
     @ManyToOne(fetch = FetchType.LAZY)
@@ -46,9 +47,6 @@ public class Product extends BaseEntity {
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "idChipset")
     private Chipset chipset;
-
-    private String description;
-    private Integer amount;
 
     @JsonProperty(value = "images")
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "product", fetch = FetchType.LAZY)
