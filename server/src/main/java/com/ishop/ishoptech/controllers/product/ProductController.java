@@ -1,7 +1,7 @@
 package com.ishop.ishoptech.controllers.product;
 
-import com.ishop.ishoptech.models.image.Image;
 import com.ishop.ishoptech.models.product.Product;
+import com.ishop.ishoptech.models.type.Type;
 import com.ishop.ishoptech.services.image.ImageService;
 import com.ishop.ishoptech.services.product.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,13 +29,18 @@ public class ProductController {
     }
 
     @GetMapping("/products/{id}")
-    public Product productById(@PathVariable String id){
+    public Product productById(@PathVariable String id) {
         return this.productService.findById(Long.valueOf(id));
     }
 
     @GetMapping("/products")
     public List<Product> productsAll() {
         return productService.findAll();
+    }
+
+    @GetMapping("/products/type")
+    public List<Product> productByType(@RequestBody Type type) {
+        return this.productService.findByType(type);
     }
 
 }

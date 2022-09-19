@@ -50,10 +50,12 @@ public class Product extends BaseEntity {
     private String description;
     private Integer amount;
 
-    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "product", fetch = FetchType.LAZY)
+    @JsonProperty(value = "images")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "product", fetch = FetchType.LAZY)
     @Fetch(FetchMode.JOIN)
     @ToString.Exclude
-    private Set<Image> images;
+    @EqualsAndHashCode.Exclude
+    private List<Image> images;
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "receipt", fetch = FetchType.LAZY)
