@@ -42,5 +42,4 @@ public class ProductController {
     public List<Product> productByType(@PathVariable String typeId) {
         return this.productService.findByTypeId(Long.valueOf(typeId));
     }
-
 }
