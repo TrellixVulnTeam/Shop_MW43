@@ -2,6 +2,7 @@ package com.ishop.ishoptech.models;
 
 import lombok.Data;
 import lombok.ToString;
+import lombok.With;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ce9b4753-97d0-4d38-9afc-8281c3c6a491" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/shop/src/app/models/company/Company.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/shop/src/app/models/image/Image.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/shop/src/app/models/product/Product.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/shop/src/app/models/type/Type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SHOP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SHOP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/product/product-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/product-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/product/product.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/product.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/product/products-all/products-all.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/product/products-all/products-all.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/models/chipset/Chipset.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/product/products-all/products-all.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/product/products-all/products-all.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/services/product/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/services/product/product.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/services/user.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/services/user/user.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/services/user/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/product/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/repository/product/ProductJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/repository/product/ProductJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/services/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/services/product/ProductService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2EzLLEKHqfZPtFkS02naTWD7DVi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;803742c3ab7c1fd44dbaa3d3d9568c59&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Work\\pets\\Shop\\client\\shop\\node_modules\\typescript\\lib&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\pets\Shop\client\shop\src\app\modules" />
+      <recent name="D:\Work\pets\Shop\client\shop\src\app\services\type" />
+      <recent name="D:\Work\pets\Shop\client\shop\src\app\services\user" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="IshopTechApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ishop-tech" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ishop.ishoptech.IshopTechApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce9b4753-97d0-4d38-9afc-8281c3c6a491" name="Changes" comment="" />
+      <created>1663593410598</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663593410598</updated>
+      <workItem from="1663593413623" duration="182000" />
+      <workItem from="1663665541967" duration="8000" />
+      <workItem from="1663672515969" duration="4265000" />
+      <workItem from="1663677172640" duration="7000" />
+      <workItem from="1663746713259" duration="4418000" />
+      <workItem from="1663836371201" duration="3107000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/product/ProductController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/product/ProductController.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

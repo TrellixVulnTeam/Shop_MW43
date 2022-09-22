@@ -26,8 +26,8 @@ public class ProductService {
         return this.productJPA.findById(id).orElse(null);
     }
 
-    public List<Product> findByType(Type type) {
-        return this.productJPA.findByType(type);
+    public List<Product> findByTypeId(Long typeId) {
+        return this.productJPA.findByTypeId(typeId);
     }
 
     public List<Product> findAll() {

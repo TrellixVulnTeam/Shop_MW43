@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface ProductJPA extends JpaRepository<Product, Long> {
 
-    public List<Product> findByType(Type type);
+    public List<Product> findByTypeId(Long typeId);
 
 }

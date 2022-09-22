@@ -38,9 +38,9 @@ public class ProductController {
         return productService.findAll();
     }
 
-    @GetMapping("/products/type")
-    public List<Product> productByType(@RequestBody Type type) {
-        return this.productService.findByType(type);
+    @GetMapping("/products/type/{typeId}")
+    public List<Product> productByType(@PathVariable String typeId) {
+        return this.productService.findByTypeId(Long.valueOf(typeId));
     }
 
 }
