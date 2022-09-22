@@ -21,11 +21,5 @@ public class Image extends BaseEntity {
     private String description;
     private String path_to_file;
 
-    @ToString.Exclude
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    @ManyToOne(fetch = FetchType.LAZY)
-    @Fetch(FetchMode.JOIN)
-    @JoinColumn(name = "idProduct")
-    private Product product;
 
 }

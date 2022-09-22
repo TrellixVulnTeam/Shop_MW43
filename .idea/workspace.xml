@@ -4,35 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce9b4753-97d0-4d38-9afc-8281c3c6a491" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/shop/src/app/models/company/Company.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/shop/src/app/models/image/Image.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/shop/src/app/models/product/Product.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/shop/src/app/models/type/Type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SHOP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SHOP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/product/product-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/product-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/product/product.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/product.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/product/products-all/products-all.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/product/products-all/products-all.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/models/chipset/Chipset.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/product/products-all/products-all.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/product/products-all/products-all.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/services/product/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/services/product/product.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/services/user.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/services/user/user.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/services/user/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/product/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/repository/product/ProductJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/repository/product/ProductJPA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/services/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/services/product/ProductService.java" afterDir="false" />
+    <list default="true" id="ce9b4753-97d0-4d38-9afc-8281c3c6a491" name="Changes" comment="adding router configuration">
+      <changelist_data name="Nikita-Hritsay" email="hritsaynikita@gmail.com" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/image/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/image/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Nikita-Hritsay &lt;hritsaynikita@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -114,8 +96,24 @@
       <workItem from="1663672515969" duration="4265000" />
       <workItem from="1663677172640" duration="7000" />
       <workItem from="1663746713259" duration="4418000" />
-      <workItem from="1663836371201" duration="3107000" />
+      <workItem from="1663836371201" duration="3683000" />
+      <workItem from="1663840926348" duration="1657000" />
     </task>
+    <task id="LOCAL-00001" summary="adding router configuration">
+      <created>1663839575398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663839575398</updated>
+    </task>
+    <task id="LOCAL-00002" summary="adding router configuration">
+      <created>1663839651624</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663839651624</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,18 +130,17 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding router configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding router configuration" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/product/ProductController.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/product/ProductController.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="2" />
+          <line>27</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

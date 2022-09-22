@@ -49,7 +49,8 @@ public class Product extends BaseEntity {
     private Chipset chipset;
 
     @JsonProperty(value = "images")
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "product", fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "idProduct")
     @Fetch(FetchMode.JOIN)
     @ToString.Exclude
     @EqualsAndHashCode.Exclude

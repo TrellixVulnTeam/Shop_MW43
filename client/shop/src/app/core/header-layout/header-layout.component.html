@@ -1,6 +1,15 @@
-<div class="header_refs">
-  <a class="header__link" [routerLink]="['web', 'products']">Home page</a>
-  <ng-template ngFor let-type [ngForOf]="types">
-    <a class="header__link" [routerLink]="['web', 'products', 'type', type.id]" routerLinkActive="activebutton" >{{type.name}}</a>
-  </ng-template>
+<div class="header">
+  <div class="inner_header">
+    <div class="logo_container">
+      <h1>COMP<span>SHOP</span></h1>
+    </div>
+    <div class="navigation">
+      <ul>
+        <a class="header__link" [routerLink]="['web', 'products']"><li>Home page</li></a>
+        <ng-template ngFor let-type [ngForOf]="types">
+          <a class="header__link" [routerLink]="['web', 'products', 'type', type.id]" routerLinkActive="activebutton" ><li>{{type.name}}</li></a>
+        </ng-template>
+      </ul>
+    </div>
+  </div>
 </div>
