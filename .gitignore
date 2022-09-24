@@ -1,0 +1,8 @@
+.idea
+client/shop/.angular
+client/shop/.vscode
+client/shop/node_modules
+server/.idea
+server/.mvn
+server/target
+server/src/main/resources
