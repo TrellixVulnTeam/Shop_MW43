@@ -18,7 +18,6 @@ export class HeaderLayoutComponent implements OnInit {
   ngOnInit(): void {
     this.typeService.getAll().subscribe(data => {
       this.types = data;
-      console.log(data);
     })
   }
 

@@ -19,6 +19,7 @@ export class ProductsAllComponent implements OnInit {
     this.productService.getAll().subscribe(data => {
       this.products = data;
     });
+    console.log(window.sessionStorage.getItem("auth_pass"));
   }
 
 }

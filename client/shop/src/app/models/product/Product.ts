@@ -8,17 +8,19 @@ export class Product {
   name: string;
   price: bigint;
   description: string;
+  fullDescription: string;
   amount: number;
   type: Type;
   company: Company;
   chipset: Chipset;
   images: Image[];
 
-  constructor(id: number, name: string, price: bigint, description: string, amount: number, type: Type, company: Company, chipset: Chipset, images: Image[]) {
+  constructor(id: number, name: string, price: bigint, description: string, fullDescription: string, amount: number, type: Type, company: Company, chipset: Chipset, images: Image[]) {
     this.id = id;
     this.name = name;
     this.price = price;
     this.description = description;
+    this.fullDescription = fullDescription;
     this.amount = amount;
     this.type = type;
     this.company = company;

@@ -4,12 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce9b4753-97d0-4d38-9afc-8281c3c6a491" name="Changes" comment="adding router configuration">
-      <changelist_data name="Nikita-Hritsay" email="hritsaynikita@gmail.com" />
+    <list default="true" id="ce9b4753-97d0-4d38-9afc-8281c3c6a491" name="Changes" comment="adding design to header">
+      <change afterPath="$PROJECT_DIR$/client/shop/src/app/utils/JWTUtils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/image/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/image/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/10.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/13.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/14.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/7.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/9.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/node_modules/__ngcc_entry_points__.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/node_modules/__ngcc_entry_points__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/core/core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/core/core.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/core/header-layout/header-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/core/header-layout/header-layout.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/core/header-layout/header-layout.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/core/header-layout/header-layout.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/core/header-layout/header-layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/core/header-layout/header-layout.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/models/product/Product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/models/product/Product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/services/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/services/user/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/auth/AuthenticationRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/auth/AuthenticationRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +99,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\pets\Shop\client\shop\src\app\core\login" />
       <recent name="D:\Work\pets\Shop\client\shop\src\app\modules" />
       <recent name="D:\Work\pets\Shop\client\shop\src\app\services\type" />
       <recent name="D:\Work\pets\Shop\client\shop\src\app\services\user" />
@@ -97,7 +128,8 @@
       <workItem from="1663677172640" duration="7000" />
       <workItem from="1663746713259" duration="4418000" />
       <workItem from="1663836371201" duration="3683000" />
-      <workItem from="1663840926348" duration="1657000" />
+      <workItem from="1663840926348" duration="6646000" />
+      <workItem from="1664014267774" duration="10513000" />
     </task>
     <task id="LOCAL-00001" summary="adding router configuration">
       <created>1663839575398</created>
@@ -113,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663839651624</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adding design to header">
+      <created>1663855059853</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663855059853</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,15 +171,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding router configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding router configuration" />
+    <MESSAGE value="adding design to header" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding design to header" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/product/ProductController.java</url>
           <line>27</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/auth/AuthenticationRestController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

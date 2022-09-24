@@ -5,6 +5,7 @@ import com.ishop.ishoptech.models.user.User;
 import com.ishop.ishoptech.security.jwt.provider.JwtTokenProvider;
 import com.ishop.ishoptech.security.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -55,7 +56,7 @@ public class AuthenticationRestController {
 
             return ResponseEntity.ok(response);
         } catch (AuthenticationException e) {
-            throw new BadCredentialsException("Invalid username or password");
+            return new  ResponseEntity(HttpStatus.NO_CONTENT);
         }
     }
 

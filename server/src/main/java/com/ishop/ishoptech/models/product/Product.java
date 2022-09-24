@@ -28,6 +28,7 @@ public class Product extends BaseEntity {
     private String name;
     private BigDecimal price;
     private String description;
+    private String fullDescription;
     private Integer amount;
 
     @ToString.Exclude

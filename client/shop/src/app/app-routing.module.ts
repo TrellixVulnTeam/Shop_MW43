@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {AppComponent} from "./app.component";
 import {CommonModule} from "@angular/common";
 
 const routes: Routes = [
@@ -13,6 +12,10 @@ const routes: Routes = [
     path: 'web/products',
     loadChildren: () => import('./modules/product/product.module').then(m => m.ProductModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import("./core/core.module").then(m => m.CoreModule)
+  }
 ];
 
 @NgModule({
