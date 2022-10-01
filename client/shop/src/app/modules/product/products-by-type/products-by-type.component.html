@@ -1,32 +1,18 @@
-<span *ngIf="products?.length < 1">There is no products by this type</span>
-<div *ngIf="products?.length > 0">
-  <table>
-    <tr>
-      <th>id</th>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Description</th>
-      <th>Amount</th>
-      <th>Type</th>
-      <th>Company</th>
-      <th>Chipset</th>
-      <th>Images</th>
-    </tr>
+<div class="main">
 
-    <ng-template ngFor let-item [ngForOf]="products">
-      <tr>
-        <td>{{item.id}}</td>
-        <td>{{item.name}}</td>
-        <td>{{item.price}}</td>
-        <td>{{item.description}}</td>
-        <td>{{item.amount}}</td>
-        <td>{{item.type.name}}</td>
-        <td>{{item.company.name}}</td>
-        <td>{{item.chipset.name}}</td>
-        <ng-template ngFor let-image [ngForOf]="item.images">
-          <!--<img  class="images" src='file{{image.path_to_file}}' alt="">-->
-        </ng-template>
-      </tr>
-    </ng-template>
-  </table>
+  <ng-template ngFor let-product [ngForOf]="products">
+    <div class="container">
+      <div class="images">
+        <img src="assets/products/motherboards/1.jpg" />
+      </div>
+      <div class="product">
+        <h1>{{product.name}}</h1>
+        <h2>{{product.price}}</h2>
+        <p class="desc">{{product.description}}</p>
+        <div class="buttons">
+          <button class="add">Add to Basket</button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
 </div>

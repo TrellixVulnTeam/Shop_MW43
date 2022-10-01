@@ -57,10 +57,12 @@ public class Product extends BaseEntity {
     @EqualsAndHashCode.Exclude
     private List<Image> images;
 
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "receipt", fetch = FetchType.LAZY)
+    @JsonProperty(value = "receiptProduct")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "idProduct")
     @Fetch(FetchMode.JOIN)
     @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private Set<ReceiptProduct> receiptProducts;
 
 }

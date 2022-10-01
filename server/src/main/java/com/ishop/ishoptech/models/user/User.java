@@ -2,9 +2,11 @@ package com.ishop.ishoptech.models.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.ishop.ishoptech.models.BaseEntity;
+import com.ishop.ishoptech.models.basket.Basket;
 import com.ishop.ishoptech.models.receipt.Receipt;
 import com.ishop.ishoptech.models.role.Role;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
@@ -33,17 +35,33 @@ public class User extends BaseEntity {
     private Date birthday;
     @Column(name = "password")
     private String password;
+    @Column(name = "description")
+    private String description;
+    @Column(name = "email")
+    private String email;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "role_user",
             joinColumns = {@JoinColumn(name = "idUser", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "idRole", referencedColumnName = "id")})
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private Set<Role> roles;
 
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "user", fetch = FetchType.LAZY)
+    @JsonProperty(value = "receipts")
+    @OneToMany(cascade = CascadeType.REMOVE, fetch = FetchType.LAZY)
+    @JoinColumn(name = "idUser")
     @Fetch(FetchMode.JOIN)
     @ToString.Exclude
-    private List<Receipt> receipts;
+    @EqualsAndHashCode.Exclude
+    private Set<Receipt> receipts;
+
+    @JsonProperty(value = "baskets")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "idUser")
+    @Fetch(FetchMode.JOIN)
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    private Set<Basket> baskets;
 
 }

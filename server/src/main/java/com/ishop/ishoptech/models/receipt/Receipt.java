@@ -33,10 +33,12 @@ public class Receipt extends BaseEntity {
     @JoinColumn(name = "idUser")
     private User user;
 
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "product", fetch = FetchType.LAZY)
+    @JsonProperty(value = "receiptProduct")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "idReceipt")
     @Fetch(FetchMode.JOIN)
     @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private List<ReceiptProduct> receiptProducts;
 
 }

@@ -1,0 +1,149 @@
+$font: 'Lato', sans-serif;
+
+$white: #ffffff;
+$light: #000000;
+$tan: #000000;
+$blue: #002dff;
+$shadow: #3188ff;
+$dark: #000000;
+
+.main {
+  padding-top: 80px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container {
+  position: relative;
+  margin: 50px 0 0 10px;
+  overflow: hidden;
+  width: 550px;
+  height: 300px;
+  box-shadow: 2px 2px 7px rgba($shadow, .5);
+  border-radius: 10px;
+}
+
+p {
+  font-size: 10px;
+  color: $shadow;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 1.2em;
+  color: $dark;
+  margin-top: 15px;
+}
+
+h2 {
+  color: $tan;
+  margin-top: -5px;
+}
+
+img {
+  width: 290px;
+  margin-top: 47px;
+  margin-left: 10px;
+}
+
+.product {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 10%;
+  left: 60%;
+}
+
+.desc {
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 17px;
+  color: $dark;
+  font-size: 14px;
+  line-height: 1.6em;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+button {
+  background: darken($light, 10%);
+  padding: 10px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  margin: -1px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $white;
+  cursor: pointer;
+  &:hover {
+    background: $shadow;
+    transition: all .4s ease-in-out;
+  }
+}
+
+.add {
+  width: 67%;
+}
+
+.like {
+  width: 22%;
+}
+
+.sizes {
+  display: grid;
+  color: $blue;
+  grid-template-columns: repeat(auto-fill, 30px);
+  width: 60%;
+  grid-gap: 4px;
+  margin-left: 20px;
+  margin-top: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.pick {
+  margin-top: 11px;
+  margin-bottom:0;
+  margin-left: 20px;
+}
+
+.size {
+  padding: 9px;
+  border: 1px solid $light;
+  font-size: 0.7em;
+  text-align: center;
+  &:hover{
+    background: $shadow;
+    color: $white;
+    transition: all .4s ease-in-out;
+  }
+}
+
+.focus{
+  background: $shadow;
+  color: $white;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 10px;
+  p {
+    letter-spacing: 3px;
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    &:hover {
+      color: #7d7d7d;
+    }
+  }
+}

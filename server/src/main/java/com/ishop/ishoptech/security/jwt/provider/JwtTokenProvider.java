@@ -59,6 +59,13 @@ public class JwtTokenProvider {
         return null;
     }
 
+    public String resolveToken(String token) {
+        if (token != null && token.startsWith("Bearer_")) {
+            return token.substring(7, token.length());
+        }
+        return null;
+    }
+
     public String getUsername(String token) {
         return Jwts.parser().setSigningKey(secret).parseClaimsJws(token).getBody().getSubject();
     }

@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log(window.sessionStorage.getItem("auth_pass"));
     this.userForm = this.formBuilder.group({
       username: "",
       password: ""
@@ -36,15 +37,16 @@ export class LoginComponent implements OnInit {
         if (data === null) {
           this.errorMessage = "Bad credentials";
         } else {
+          console.log(data);
           this.errorMessage = "";
           window.sessionStorage.setItem("auth_pass", "Bearer_" + data.token);
-          this.router.navigate(["web/products"]);
+          window.sessionStorage.setItem("role", data.roles.filter((r: any) => r.name == 'ROLE_ADMIN').length > 0 ? "ROLE_ADMIN": "ROLE_USER");
+          this.router.navigate(["web/products"]).then(r => location.reload());
         }
       },
       err => {
         this.errorMessage = err.error.message;
         this.isLoginFailed = true;
-        console.log("error");
       }
     );
   }

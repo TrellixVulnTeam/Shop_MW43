@@ -21,4 +21,12 @@ public class ReceiptService {
         return this.receiptJPA.findAll();
     }
 
+    public List<Receipt> findByUserId(Long idUser) {
+        return this.receiptJPA.findByUserId(idUser);
+    }
+
+    public Receipt findById(Long id) {
+        return this.receiptJPA.findById(id).orElse(null);
+    }
+
 }

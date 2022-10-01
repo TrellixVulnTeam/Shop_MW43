@@ -1,0 +1,50 @@
+<div class="cards">
+
+  <div class="card card-3">
+
+    <div class="card-items">
+
+      <div class="card-top-bar">
+
+        <div class="card-contact">
+
+          <ul>
+            <li><a href="#">{{user?.telephone}}</a></li>
+            <li><a href="#">{{user?.email}}</a></li>
+          </ul>
+
+        </div>
+
+        <div class="card-image">
+
+          <img src="assets/user/background.jpg">
+          <p>{{user?.firstName}} {{user?.lastName}} {{user?.patronymic}}</p>
+
+        </div>
+
+        <div class="card-contact">
+
+          <ul>
+            <li><a href="#">{{user?.birthday}}</a></li>
+            <li><a href="web/user/edit">Edit Personal Information</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="card-bottom-bar">
+
+        <div class="card-description">
+
+          <p class="user__description">{{user?.description}}</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

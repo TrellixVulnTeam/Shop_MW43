@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {CommonModule} from "@angular/common";
 
 const routes: Routes = [
   {
@@ -15,14 +14,17 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import("./core/core.module").then(m => m.CoreModule)
+  },
+  {
+    path: "web/user",
+    loadChildren: () => import("./modules/user/user.module").then(m => m.UserModule)
   }
 ];
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
-    RouterModule.forRoot(routes, {onSameUrlNavigation: "reload"})
+    RouterModule.forRoot(routes, { onSameUrlNavigation: "reload" })
   ],
   exports: [
     RouterModule

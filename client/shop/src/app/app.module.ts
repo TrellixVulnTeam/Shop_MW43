@@ -7,6 +7,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {CoreModule} from "./core/core.module";
 import {ProductModule} from "./modules/product/product.module";
 import {RouterModule} from "@angular/router";
+import {DatePipe} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import {RouterModule} from "@angular/router";
     CoreModule,
     RouterModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule {

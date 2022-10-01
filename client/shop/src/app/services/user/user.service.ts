@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import {HttpClient} from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -15,5 +15,10 @@ export class UserService {
     return this.httpClient.post("api/auth/login", {"username": username, "password": password});
   }
 
-  constructor(private httpClient: HttpClient) { }
+  public getByToken(token: string): Observable<any> {
+    return this.httpClient.get(`api/users/token/${token}`);
+  }
+
+  constructor(private httpClient: HttpClient) {
+  }
 }
