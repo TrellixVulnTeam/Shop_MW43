@@ -2,13 +2,13 @@ package com.ishop.ishoptech.models.basket;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.ishop.ishoptech.models.BaseEntity;
-import com.ishop.ishoptech.models.receipt.ReceiptProduct;
 import com.ishop.ishoptech.models.user.User;
 import lombok.*;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -35,4 +35,19 @@ public class Basket extends BaseEntity {
     @EqualsAndHashCode.Exclude
     private List<BasketProduct> basketProducts;
 
+    public List<BasketProduct> getBasketProducts() {
+        return this.basketProducts == null ? new ArrayList<>() : this.basketProducts;
+    }
+
+    public void setBasketProduct(BasketProduct basketProducts) {
+        if (this.basketProducts == null) {
+            this.basketProducts = List.of(basketProducts);
+        } else {
+            this.basketProducts.add(basketProducts);
+        }
+    }
+    public Basket addToBasketProducts(BasketProduct basketProduct) {
+        this.getBasketProducts().add(basketProduct);
+        return this;
+    }
 }

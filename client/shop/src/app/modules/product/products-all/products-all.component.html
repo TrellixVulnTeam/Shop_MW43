@@ -6,11 +6,12 @@
         <img src="assets/products/motherboards/1.jpg" />
       </div>
       <div class="product">
+        <p>{{product.id}}</p>
         <h1>{{product.name}}</h1>
         <h2>{{product.price}}</h2>
         <p class="desc">{{product.description}}</p>
         <div class="buttons">
-          <button class="add">Add to Basket</button>
+          <button class="add" (click)="addToBasket(product.id)">Add to Basket</button>
         </div>
       </div>
     </div>

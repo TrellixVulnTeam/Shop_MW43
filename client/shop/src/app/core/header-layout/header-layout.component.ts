@@ -22,14 +22,13 @@ export class HeaderLayoutComponent implements OnInit {
       this.types = data;
     })
     this.role = window.sessionStorage.getItem("role");
-    console.log("ROLE " + this.role);
+    console.log(window.sessionStorage.getItem("auth_pass"));
   }
 
   logout (): void {
     window.sessionStorage.removeItem("auth_pass");
     window.sessionStorage.removeItem("role");
-    this.router.navigate(["login"]);
-    location.reload();
+    this.router.navigate(["login"]).then(r => location.reload());
   }
 
 }

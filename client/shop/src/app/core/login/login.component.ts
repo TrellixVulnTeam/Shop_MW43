@@ -37,7 +37,6 @@ export class LoginComponent implements OnInit {
         if (data === null) {
           this.errorMessage = "Bad credentials";
         } else {
-          console.log(data);
           this.errorMessage = "";
           window.sessionStorage.setItem("auth_pass", "Bearer_" + data.token);
           window.sessionStorage.setItem("role", data.roles.filter((r: any) => r.name == 'ROLE_ADMIN').length > 0 ? "ROLE_ADMIN": "ROLE_USER");
@@ -49,6 +48,9 @@ export class LoginComponent implements OnInit {
         this.isLoginFailed = true;
       }
     );
+  }
+
+  registration() {
   }
 
 }

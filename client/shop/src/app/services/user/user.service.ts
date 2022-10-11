@@ -19,6 +19,20 @@ export class UserService {
     return this.httpClient.get(`api/users/token/${token}`);
   }
 
+  public register(username: string, firstname: string, lastname: string, patronymic: string, telephone: string, birthday: string, description: string, email: string, password: string) {
+    return this.httpClient.post("api/users/register", {
+          "username": username,
+          "firstName": firstname,
+          "lastName": lastname,
+          "patronymic": patronymic,
+          "telephone": telephone,
+          "birthday": birthday,
+          "description": description,
+          "email": email,
+          "password": password
+    })
+  }
+
   constructor(private httpClient: HttpClient) {
   }
 }

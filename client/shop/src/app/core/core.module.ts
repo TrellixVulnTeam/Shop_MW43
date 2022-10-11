@@ -5,13 +5,15 @@ import {RouterModule} from "@angular/router";
 import { LoginComponent } from './login/login.component';
 import {CoreRoutingModule} from "./core-routing.module";
 import {ReactiveFormsModule} from "@angular/forms";
+import { RegistrationComponent } from './registration/registration.component';
 
 
 
 @NgModule({
     declarations: [
         HeaderLayoutComponent,
-        LoginComponent
+        LoginComponent,
+        RegistrationComponent
     ],
     exports: [
         HeaderLayoutComponent

@@ -6,14 +6,14 @@
     <div class="navigation">
       <ul>
         <a class="header__link" *ngIf="role == 'ROLE_ADMIN'" [routerLink]=""><li>ADMIN</li></a>
-        <a class="header__link" *ngIf="role == 'ROLE_USER'" [routerLink]=""><li>USER</li></a>
+        <a class="header__link" *ngIf="role == 'ROLE_USER'" [routerLink]="['web', 'user', 'basket']"><li>BASKET</li></a>
         <a class="header__link" [routerLink]="['web', 'products']"><li>Home page</li></a>
         <ng-template ngFor let-type [ngForOf]="types">
           <a class="header__link" [routerLink]="['web', 'products', 'type', type.id]" routerLinkActive="activebutton" ><li>{{type.name}}</li></a>
         </ng-template>
         <a class="header__link" *ngIf="!isLoggedIn" routerLink="login"><li>Login</li></a>
         <a class="header__link" *ngIf="isLoggedIn" [routerLink]="['web', 'user', 'account']"><li>Account</li></a>
-        <button *ngIf="isLoggedIn" class="header__button" (click)="logout()"><li>Log out</li></button>
+        <button class="treat-button" *ngIf="isLoggedIn" (click)="logout()"><li>Log out</li></button>
       </ul>
     </div>
   </div>

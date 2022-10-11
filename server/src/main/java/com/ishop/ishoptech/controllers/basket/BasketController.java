@@ -1,27 +1,62 @@
 package com.ishop.ishoptech.controllers.basket;
 
+import com.ishop.ishoptech.dto.basket.AddToBasketDto;
+import com.ishop.ishoptech.dto.jwt.JWTDto;
 import com.ishop.ishoptech.models.basket.Basket;
+import com.ishop.ishoptech.models.basket.BasketProduct;
+import com.ishop.ishoptech.models.product.Product;
+import com.ishop.ishoptech.security.jwt.provider.JwtTokenProvider;
+import com.ishop.ishoptech.security.user.Impl.UserServiceImpl;
 import com.ishop.ishoptech.services.basket.BasketService;
+import com.ishop.ishoptech.services.product.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/basket")
+@RequestMapping("/api/basket")
 public class BasketController {
 
     private final BasketService basketService;
+    private final JwtTokenProvider jwtTokenProvider;
+    private final UserServiceImpl userService;
+    private final ProductService productService;
 
     @Autowired
-    public BasketController(BasketService basketService) {
+    public BasketController(BasketService basketService, JwtTokenProvider jwtTokenProvider, UserServiceImpl userService, ProductService productService) {
         this.basketService = basketService;
+        this.jwtTokenProvider = jwtTokenProvider;
+        this.userService = userService;
+        this.productService = productService;
     }
 
-    @GetMapping("/user/{id}")
-    public Basket findBasketByUserId(@PathVariable String id) {
-        return this.basketService.findByUserId(Long.valueOf(id));
+    @GetMapping("/user/{token}")
+    public Basket findBasketByUserId(@PathVariable String token) {
+        return this.basketService.findByUserId(userService.findByUsername(jwtTokenProvider.getUsername(jwtTokenProvider.resolveToken(token))).getId());
+    }
+
+    @PostMapping("/user/addProduct")
+    public ResponseEntity<ResponseStatus> addProduct(@RequestBody AddToBasketDto addToBasketDto) {
+        Basket basket = basketService.findByUserId(userService.findByUsername(jwtTokenProvider.getUsername(jwtTokenProvider.resolveToken(addToBasketDto.getToken()))).getId());
+        if(basket == null) {
+            basket = basketService.save(new Basket().withUser(userService.findByUsername(jwtTokenProvider.getUsername(jwtTokenProvider.resolveToken(addToBasketDto.getToken())))));
+        }
+        Product product = productService.findById(Long.valueOf(addToBasketDto.getIdProduct()));
+        BasketProduct basketProduct = new BasketProduct().withAmount(Integer.parseInt(addToBasketDto.getAmount())).withProduct(product).withBasket(basket).withPrice(Integer.parseInt(addToBasketDto.getAmount()) * product.getPrice().intValue());
+        basket.setBasketProduct(basketProduct);
+        try {
+            basketService.save(basket);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (Exception exception) {
+            return new ResponseEntity<>(HttpStatus.CONFLICT);
+        }
+    }
+
+    @RequestMapping(value = "/user/clearBasket", method=RequestMethod.DELETE)
+    @ResponseBody
+    public void clearBasket(@RequestBody JWTDto tokenDto) {
+        this.basketService.clear(basketService.findByUserId(userService.findByUsername(jwtTokenProvider.getUsername(jwtTokenProvider.resolveToken(tokenDto.getToken()))).getId()));
     }
 
 }

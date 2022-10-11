@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.ishop.ishoptech.models.BaseEntity;
 import com.ishop.ishoptech.models.product.Product;
 import lombok.*;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
 
@@ -21,13 +23,13 @@ public class BasketProduct extends BaseEntity {
 
     @ToString.Exclude
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     @JoinColumn(name = "idBasket")
     private Basket basket;
 
     @ToString.Exclude
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @ManyToOne(fetch = FetchType.LAZY)
+    @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "idProduct")
     private Product product;
 

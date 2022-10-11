@@ -7,11 +7,41 @@
 
 .header {
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   height: 80px;
   display: block;
   background-color: #1c1c1c;
+}
+
+.treat-button {
+  align-content: center;
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 16px;
+  appearance: none;
+  background: linear-gradient(to bottom, #ff1313, #ff0000);
+  border: none;
+  color: #FFF;
+  border-radius: 6px  ;
+  padding: 10px 15px 10px 13px;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0 0 1em rgba(white, .2);
+  transition: transform .1s cubic-bezier(.5, 0, .5, 1),
+  box-shadow .2s;
+
+  &:hover {
+    box-shadow: 0 0 2em rgba(white, .3);
+  }
+
+  outline: none;
+
+  &:active {
+    transform: scale(0.8) translateY(10%);
+    transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+  }
 }
 
 .inner_header {
@@ -53,6 +83,7 @@
     li {
       display: table-cell;
       vertical-align: middle;
+      horiz-align: center;
       height: 100%;
       padding-top: 13px;
       color: white;

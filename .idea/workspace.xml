@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce9b4753-97d0-4d38-9afc-8281c3c6a491" name="Changes" comment="adding login page html and scss">
-      <change afterPath="$PROJECT_DIR$/client/shop/src/app/models/user/User.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/shop/src/app/modules/user/user-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/basket/BasketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/receipt/ReceiptController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/user/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/basket/Basket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/basket/BasketProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/repository/basket/BasketJPA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/services/basket/BasketService.java" afterDir="false" />
+    <list default="true" id="ce9b4753-97d0-4d38-9afc-8281c3c6a491" name="Changes" comment="registration and basket">
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/dto/basket/AddToBasketDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/dto/jwt/JWTDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/repository/basket/BasketProductJPA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/services/basket/BasketProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/0.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/1.pack" afterDir="false" />
@@ -29,28 +24,29 @@
       <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/5.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/6.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/8.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/9.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/index.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/.angular/cache/14.1.0/angular-webpack/0bbf637cd5d940648dd1a950fcee2a9f52e9668f/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/core/core-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/core/core-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/core/core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/core/core.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/shop/src/app/core/header-layout/header-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/core/header-layout/header-layout.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/shop/src/app/core/header-layout/header-layout.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/core/header-layout/header-layout.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/shop/src/app/core/header-layout/header-layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/core/header-layout/header-layout.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/core/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/core/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/core/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/core/login/login.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/shop/src/app/core/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/core/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-by-type/products-by-type.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-by-type/products-by-type.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-by-type/products-by-type.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-by-type/products-by-type.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/product/products-all/products-all.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/modules/user/account-page/account-page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/user/account-page/account-page.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/modules/user/user-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/user/user-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/modules/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/modules/user/user.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/shop/src/app/services/basket/basket.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/services/basket/basket.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/shop/src/app/services/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/services/user/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/shop/src/app/utils/JWTUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/shop/src/app/utils/JWT/JWTUtils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/auth/AuthenticationRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/auth/AuthenticationRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/receipt/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/receipt/Receipt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/role/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/role/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/repository/receipt/ReceiptJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/repository/receipt/ReceiptJPA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/security/jwt/provider/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/security/jwt/provider/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/services/receipt/ReceiptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/services/receipt/ReceiptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/basket/BasketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/basket/BasketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/product/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/basket/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/basket/Basket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/basket/BasketProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/basket/BasketProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/services/basket/BasketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/services/basket/BasketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,8 +57,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="TypeScript File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,32 +86,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "803742c3ab7c1fd44dbaa3d3d9568c59",
-    "ts.external.directory.path": "D:\\Work\\pets\\Shop\\client\\shop\\node_modules\\typescript\\lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;803742c3ab7c1fd44dbaa3d3d9568c59&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Work\\pets\\Shop\\client\\shop\\node_modules\\typescript\\lib&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Work\pets\Shop\client\shop\src\app\services\receipt" />
@@ -151,7 +150,11 @@
       <workItem from="1664014267774" duration="11700000" />
       <workItem from="1664103291409" duration="10682000" />
       <workItem from="1664353623143" duration="1755000" />
-      <workItem from="1664623135670" duration="5414000" />
+      <workItem from="1664623135670" duration="5750000" />
+      <workItem from="1665044205023" duration="12767000" />
+      <workItem from="1665133718563" duration="11106000" />
+      <workItem from="1665470295512" duration="13632000" />
+      <workItem from="1665490675653" duration="356000" />
     </task>
     <task id="LOCAL-00001" summary="adding router configuration">
       <created>1663839575398</created>
@@ -195,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664033392948</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding account-page.component">
+      <created>1664630480911</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664630480911</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,32 +227,48 @@
     <MESSAGE value="adding design to header" />
     <MESSAGE value="adding product cards and login page" />
     <MESSAGE value="adding login page html and scss" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding login page html and scss" />
+    <MESSAGE value="adding account-page.component" />
+    <MESSAGE value="registration and basket" />
+    <option name="LAST_COMMIT_MESSAGE" value="registration and basket" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/product/ProductController.java</url>
-          <line>27</line>
+          <line>26</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/auth/AuthenticationRestController.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="6" />
+          <line>44</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/controllers/user/UserController.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/security/jwt/filter/JwtTokenFilter.java</url>
+          <url>file://$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/services/basket/BasketService.java</url>
           <line>24</line>
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/models/basket/Basket.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/main/java/com/ishop/ishoptech/services/basket/BasketProductService.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/shop/src/app/services/basket/basket.service.ts</url>
+          <line>13</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
